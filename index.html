@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/all.min.css">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="shortcut icon" href="./img/bookmark.png" type="image/x-icon">
+  <title>bookmarker</title>
+</head>
+<body>
+  
+  <div class="cc text-center p-3"> 
+
+    <div>
+      <h1>Bookmarker</h1>
+
+      <h5>Bookmark your favorite sites</h5>
+    </div>
+
+    <div class="mt-4 m-auto w-75 container border-0 rounded-4 shadow hh">
+
+      <div class="form-floating mb-3 w-10">
+        <input type="text" class="form-control rounded-pill inpt" id="siteName" placeholder="">
+        <label for="siteName" ><i class="fa fa-book-bookmark" ></i>  Site Name: </label>
+      </div>
+    
+      <div class="form-floating mb-3">
+        <input type="text" class="form-control rounded-pill inpt" id="websiteUrl" placeholder="">
+        <label for="websiteUrl"> <i class="fa fa-link" ></i>  Website URL: </label>
+      </div>
+
+      <button class="btn border border-3 rounded-4 shadow py-2 px-4" id="submit"  onclick=" addSite() " >submit</button>
+
+    </div>
+
+    <div id="deletAll">
+      
+    </div>
+
+  <div class="table-container">
+    <table class="styled-table">
+      <thead>
+        <tr>
+          <th>Index</th>
+          <th>Name</th>
+          <th>Visit</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+
+      <tbody id="tableBody">
+
+      </tbody>
+    </table>
+  </div>
+
+  </div>
+
+<script src="./js/all.min.js"></script>
+<script src="./js/bootstrap.bundle.min.js"></script>
+<script src="./js/script.js"></script>
+</body>
+</html>
