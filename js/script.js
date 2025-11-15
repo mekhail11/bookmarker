@@ -81,8 +81,8 @@ function validInputs() {
   var paternName = /[a-zA-Z0-9]{2,}/;
   var paternURL = /^https?:\/\/(www\.)?[a-z0-9\.]{2,}(\.[a-z]{2,}$)/;
   if (
-    paternURL.test(siteURLInput.value) === true &&
-    paternName.test(siteNameInput.value) === true
+    paternURL.test(websiteUrl.value) === true &&
+    paternName.test(siteName.value) === true
   ) {
     return true;
   } else {
